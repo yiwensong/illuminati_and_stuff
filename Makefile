@@ -9,3 +9,11 @@ install-hooks:
 .PHONY: test
 test:
 	tox
+
+.PHONY: clean
+clean:
+	rm -rf .tox
+	rm -rf venv
+	rm -rf .pytest_cache
+	rm -rf .coverage
+	find . -name '*.pyc' | xargs rm -rf

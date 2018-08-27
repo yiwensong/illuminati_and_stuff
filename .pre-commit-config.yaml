@@ -28,6 +28,7 @@ repos:
     sha: v2.1.1
     hooks:
       - id: pylint
+        exclude: ^tests
   - repo: https://github.com/asottile/reorder_python_imports
     sha: v1.1.0
     hooks:

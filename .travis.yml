@@ -1,0 +1,18 @@
+sudo: false
+language: python
+cache: pip
+python:
+- '3.6'
+install:
+- pip install tox-travis
+- pip install coveralls
+script:
+- tox
+after_success:
+- coveralls
+- make clean
+deploy:
+  provider: pypi
+  user: yiwensong
+  on:
+    tags: true

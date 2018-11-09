@@ -6,7 +6,7 @@ with open('README.md', 'r') as readme:
 
 setuptools.setup(
     name='illuminati-and-stuff',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT',
     author='yiwen song',
     author_email='songzgy@gmail.com',

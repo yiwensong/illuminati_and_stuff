@@ -1,3 +1,4 @@
+"""setup.py"""
 import setuptools
 
 with open('README.md', 'r') as readme:
@@ -18,6 +19,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(exclude=['tests*']),
     install_requires=[
+        'pyramid',
     ],
     classifiers=[
         'Natural Language :: English',

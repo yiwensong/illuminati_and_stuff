@@ -35,3 +35,4 @@ def test_illuminati_and_stuff_tween_factory_tb():
     body = resp.body.decode()
     assert MAGIC in body
     assert 'Exception' in body
+    assert resp.status_int == 500

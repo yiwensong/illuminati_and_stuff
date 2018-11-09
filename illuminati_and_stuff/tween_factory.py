@@ -26,6 +26,7 @@ class IlluminatiAndStuffTweenFactory:
         except Exception:
             tb = traceback.format_exc()
             resp = response.Response(
+                status_int=500,
                 body=f'<pre>{tb}</pre>',
             )
             print(tb)
